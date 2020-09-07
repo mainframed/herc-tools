@@ -173,7 +173,7 @@ sub do_file {
 
   my $fail = 0;
   foreach my $sdsc (@steps) {
-    $fail = 1 if $sdsc->{rcod} ne "RC= 0000" && $sdsc->{rcod} ne "RC= 0004";
+    $fail = 1 if $sdsc->{rcod} ne "0000" && $sdsc->{rcod} ne "0004";
   }
 
   close IFILE;
